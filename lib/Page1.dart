@@ -22,7 +22,6 @@ class Page1 extends StatelessWidget {
               }));
             },
             child:categoryContainer(text: "Conceptes  "),
-            child:categoryContainer(text: "Descobreix Scaffold"
             
           ),
         ],
