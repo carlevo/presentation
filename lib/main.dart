@@ -13,11 +13,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     /* theme: ThemeData(
+      /* theme: ThemeData(
         fontFamily: GoogleFonts.newRocker().fontFamily,
       ),*/
-      home: const Page1(  
-        ),
+      home: const Page1(),
     );
   }
 }

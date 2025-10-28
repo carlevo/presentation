@@ -17,34 +17,38 @@ class Page1 extends StatelessWidget {
               padding: const EdgeInsets.all(23.0),
               child: Text(
                 "Tutorial Flutter, elements que descobrirem avui!",
-                style: GoogleFonts.changaOne(
-                  fontSize: 34,
-                ),
+                style: GoogleFonts.changaOne(fontSize: 34),
               ),
             ),
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(context,MaterialPageRoute(builder: (context) {
-                return Page2();
-              }));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return Page2();
+                  },
+                ),
+              );
             },
-            child:categoryContainer(text: "Conceptes apresos flutter"),
-            
-          ),
-          
-          GestureDetector(
-            onTap: () {
-              Navigator.push(context,MaterialPageRoute(builder: (context) {
-                return Page3();
-              }));
-            },
-            child:categoryContainer(text: "Exemples pràctics flutter"),
-            
+            child: categoryContainer(text: "Conceptes apresos flutter"),
           ),
 
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return Page3();
+                  },
+                ),
+              );
+            },
+            child: categoryContainer(text: "Exemples pràctics flutter"),
+          ),
         ],
-        
       ),
     );
   }
