@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'containerDefinition.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -17,123 +18,115 @@ class Page2 extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Text( "Scaffold Widget", style: TextStyle(fontSize: 40, color: Colors.white),),
               )),
-              Container(
-                height: 50,
+              TitleContainer(
+                '¿Qué es el Scaffold?',
                 width: 350,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5)),
-                  color: Colors.blue,
-                ),
-                child: Text(
-                  "¿Qué es el Scaffold?",
-                  style: TextStyle(fontSize: 35),
-                ),
-                
+                height: 50,
               ),
-              Container(
+              ContentContainer(
+                'Scaffold es el widget nucleo de nuestra pagina, lo que hara que se pueda ver. '
+                'Incluye elementos como body, child entre otros.',
                 height: 100,
                 width: 750,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5), topRight: Radius.circular(5),),
-                  color: Colors.amber,
-                ),
-                child: Text(
-                  "Scaffold es el widget nucleo de nuestra pagina, lo que hara que se pueda ver. "
-                  "Incluye elementos como body, child entre otros.",
-                  style: TextStyle(fontSize: 25,),
-                ),
               ),
 
-              Container(
-                margin: EdgeInsets.only(top: 20),
-                height: 50,
+              TitleContainer(
+                '¿Como usar Scaffold?',
                 width: 350,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5)),
-                  color: Colors.blue,
-                ),
-                child: Text(
-                  "¿Como usar Scaffold?",
-                  style: TextStyle(fontSize: 35),
-                ),
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
               ),
-              Container(
+              ContentContainer(
+                'Para usar Scaffold simplemente debemos importarlo y usarlo como widget padre '
+                'de nuestra pagina, dentro de el podemos agregar los elementos que queramos ',
                 height: 120,
                 width: 750,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5), topRight: Radius.circular(5),),
-                  color: Colors.amber,
-                ),
-                child: Text(
-                  "Para usar Scaffold simplemente debemos importarlo y usarlo como widget padre "
-                  "de nuestra pagina, dentro de el podemos agregar los elementos que queramos ",
-                  style: TextStyle(fontSize: 25,),
-                ),
               ),
               Center(child: Padding(
                 padding: const EdgeInsets.all(10),
                 child: Text( "Column/Row", style: TextStyle(fontSize: 40, color: Colors.white),),
               )),
-              Container(
-                height: 50,
+              TitleContainer(
+                '¿Qué son las Columns y las Rows?',
                 width: 600,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5)),
-                  color: Colors.blue,
-                ),
-                child: Text(
-                  "¿Qué son las Columns y las Rows?",
-                  style: TextStyle(fontSize: 35),
-                ),
-                
+                height: 50,
               ),
-              Container(
+              ContentContainer(
+                'Columns y Rows son widgets que nos permiten organizar otros widgets '
+                'de manera vertical y horizontal respectivamente.',
                 height: 100,
                 width: 750,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5), topRight: Radius.circular(5),),
-                  color: Colors.amber,
-                ),
-                child: Text(
-                  "Columns y Rows son widgets que nos permiten organizar otros widgets "
-                  "de manera vertical y horizontal respectivamente.",
-                  style: TextStyle(fontSize: 25,),
-                ),
               ),
 
-              Container(
-                margin: EdgeInsets.only(top: 20),
-                height: 50,
+              TitleContainer(
+                '¿Como usarlos?',
                 width: 350,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5)),
-                  color: Colors.blue,
-                ),
-                child: Text(
-                  "¿Como usarlos?",
-                  style: TextStyle(fontSize: 35),
-                ),
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
               ),
-              Container(
+              ContentContainer(
+                'Columns y Rows se usan envolviendo los widgets que queremos organizar '
+                'dentro de ellos. Podemos especificar la direccion (vertical u horizontal)',
                 height: 120,
                 width: 750,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5), topRight: Radius.circular(5),),
-                  color: Colors.amber,
-                ),
-                child: Text(
-                  "Columns y Rows se usan envolviendo los widgets que queremos organizar "
-                  "dentro de ellos. Podemos especificar la direccion (vertical u horizontal)",
-                  style: TextStyle(fontSize: 25,),
-                ),
+              ),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text( "Text", style: TextStyle(fontSize: 40, color: Colors.white),),
+              ),),
+              TitleContainer(
+                '¿Que es el text?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Columns y Rows se usan envolviendo los widgets que queremos organizar '
+                'dentro de ellos. Podemos especificar la direccion (vertical u horizontal)',
+                height: 120,
+                width: 750,
+              ),
+
+              TitleContainer(
+                '¿Como usarlo?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Columns y Rows se usan envolviendo los widgets que queremos organizar '
+                'dentro de ellos. Podemos especificar la direccion (vertical u horizontal)',
+                height: 120,
+                width: 750,
+              ),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text( "Child", style: TextStyle(fontSize: 40, color: Colors.white),),
+              ),),
+              TitleContainer(
+                '¿Que es el child?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Columns y Rows se usan envolviendo los widgets que queremos organizar '
+                'dentro de ellos. Podemos especificar la direccion (vertical u horizontal)',
+                height: 120,
+                width: 750,
+              ),
+
+              TitleContainer(
+                '¿Como usarlo?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Columns y Rows se usan envolviendo los widgets que queremos organizar '
+                'dentro de ellos. Podemos especificar la direccion (vertical u horizontal)',
+                height: 120,
+                width: 750,
               ),
             ],
           ),
