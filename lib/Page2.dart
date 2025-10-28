@@ -12,27 +12,25 @@ class Page2 extends StatelessWidget {
           Column(
             children: [
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(12),
+                height: 10,
+                width: 200,
                 color: Colors.blue,
                 child: Text(
-                  "¿Qué es el Scaffold?\n\n"
+                  "¿Qué es el Scaffold?",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+              Container(
+                height: 100,
+                width: 300,
+                color: Colors.blue,
+                child: Text(
                   "Scaffold es el widget nucleo de nuestra pagina, lo que hara que se pueda ver. "
                   "Incluye elementos como body, child entre otros.",
                   style: TextStyle(fontSize: 16),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(12),
-                color: Colors.green,
-                child: Text(
-                  "¿Cómo se usa?\n\n"
-                  "Dentro del Scaffold, puedes definir un 'body' que contiene el contenido principal de la pantalla. "
-                  "En este ejemplo usamos un Column para organizar los widgets verticalmente.",
-                  style: TextStyle(fontSize: 16),
-                ),
-              ),
+              
             ],
           ),
         ],
