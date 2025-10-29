@@ -29,7 +29,7 @@ class TitleContainer extends StatelessWidget {
         border: Border.all(color: Colors.white),
         borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(5), topRight: Radius.circular(5)),
-        color: Colors.blue,
+        color: const Color.fromARGB(255, 255, 0, 0),
       ),
       child: Text(
         text,
@@ -71,7 +71,7 @@ class ContentContainer extends StatelessWidget {
           bottomRight: Radius.circular(5),
           topRight: Radius.circular(5),
         ),
-        color: Colors.amber,
+        color: const Color.fromARGB(255, 252, 171, 198),
       ),
       child: Text(
         text,
