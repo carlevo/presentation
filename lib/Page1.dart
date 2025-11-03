@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:presentation/Page2.dart';
 import 'package:presentation/Page3.dart';
-import 'package:presentation/categoryContainer.dart';
+import 'package:presentation/widgets/categoryContainer.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});

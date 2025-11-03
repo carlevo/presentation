@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class categoryContainer extends StatelessWidget {
-  final String text;
+
+ final String text;
   const categoryContainer({super.key, required this.text});
 
   @override

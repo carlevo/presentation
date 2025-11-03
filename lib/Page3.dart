@@ -14,18 +14,33 @@ class Page3 extends StatelessWidget {
         ),
         itemCount: Valorsglobals.valors.length,
         itemBuilder: (context, index) {
-          return Container(
-            margin: const EdgeInsets.all(8),
-            color: const Color.fromARGB(255, 245, 204, 82),
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Text("${Valorsglobals.valors[index]["nombre"]} "),
-                  Text(
-                    "Grado de dificultad: ${Valorsglobals.valors[index]["dificultad"]} ",
-                  ),
-                ],
+          return InkWell(
+            onTap: () {
+              final target = Valorsglobals.valors[index]['Page'];
+              if (target != null && target is Widget) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => target),
+                );
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('No page assigned for this item')),
+                );
+              }
+            },
+            child: Container(
+              margin: const EdgeInsets.all(8),
+              color: const Color.fromARGB(255, 245, 204, 82),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("${Valorsglobals.valors[index]["nombre"]} "),
+                    Text(
+                      "Grado de dificultad: ${Valorsglobals.valors[index]["dificultad"]} ",
+                    ),
+                  ],
+                ),
               ),
             ),
           );
