@@ -8,7 +8,7 @@ class Page4 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Usos de l'Scaffold")),
       body: const Center(
-        child: Image(image: AssetImage('assets/images/scaffold.png')),
+        child: Image(image: AssetImage('assets/images/scaffold.png'), width: 500, height: 700,),
       ),
     );
   }
