@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable title container (the blue strip)
 class TitleContainer extends StatelessWidget {
   final String text;
   final double height;
@@ -39,7 +38,7 @@ class TitleContainer extends StatelessWidget {
   }
 }
 
-/// Reusable content container (the amber box below the title)
+
 class ContentContainer extends StatelessWidget {
   final String text;
   final double height;
