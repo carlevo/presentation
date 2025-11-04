@@ -14,17 +14,17 @@ class Page3 extends StatelessWidget {
         ),
         itemCount: Valorsglobals.valors.length,
         itemBuilder: (context, index) {
-          return InkWell(
+          return GestureDetector(
             onTap: () {
               final target = Valorsglobals.valors[index]['Page'];
-              if (target != null && target is Widget) {
+              if (target != null && target is Widget) { //Nos asegurem que target no és null i és un Widget
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => target),
                 );
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('No page assigned for this item')),
+                  const SnackBar(content: Text('No page assigned for this item')), // el scaffoldmessenger Snackbar si no hi ha pàgina assignada per verure-ho més clar
                 );
               }
             },
