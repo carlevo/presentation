@@ -24,8 +24,7 @@ class Page2 extends StatelessWidget {
                 height: 50,
               ),
               ContentContainer(
-                'Scaffold es el widget nucleo de nuestra pagina, lo que hara que se pueda ver. '
-                'Incluye elementos como body, child entre otros.',
+                'Widget que provee la estructura básica de la página (AppBar, body, etc.).',
                 height: 100,
                 width: 750,
               ),
@@ -37,8 +36,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar Scaffold simplemente debemos importarlo y usarlo como widget padre '
-                'de nuestra pagina, dentro de el podemos agregar los elementos que queramos ',
+                'Usa Scaffold como widget padre de la página.',
                 height: 150,
                 width: 750,
               ),
@@ -52,8 +50,7 @@ class Page2 extends StatelessWidget {
                 height: 50,
               ),
               ContentContainer(
-                'Columns y Rows son widgets que nos permiten organizar otros widgets '
-                'de manera vertical y horizontal respectivamente.',
+                'Widgets para organizar hijos vertical u horizontalmente.',
                 height: 100,
                 width: 750,
               ),
@@ -65,8 +62,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Columns y Rows se usan envolviendo los widgets que queremos organizar '
-                'dentro de ellos. Podemos especificar la direccion (vertical u horizontal)',
+                'Envuelven widgets para organizarlos; usan `children` para la lista de hijos.',
                 height: 150,
                 width: 750,
               ),
@@ -81,8 +77,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'El widget Text nos permite mostrar texto en pantalla. '
-                'Podemos personalizar su apariencia y estilo.',
+                'Widget para mostrar texto en pantalla.',
                 height: 120,
                 width: 750,
               ),
@@ -94,8 +89,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar el widget Text, simplemente lo instanciamos y le pasamos '
-                'el texto que queremos mostrar como parametro.',
+                'Instancia `Text("texto")` y aplica estilo opcional.',
                 height: 120,
                 width: 750,
               ),
@@ -110,8 +104,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'El child es un parametro que tienen muchos widgets en Flutter. '
-                'Este parametro permite anidar un widget dentro de otro, creando una jerarquia ',
+                'Parámetro que recibe un único widget hijo (container, column, text...).',
                 height: 150,
                 width: 750,
               ),
@@ -123,8 +116,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar el child, simplemente debemos pasarle un widget como parametro '
-                'al widget padre que lo contiene.',
+                'Una vez llamado el widget, pasa otro widget como child.',
                 height: 120,
                 width: 750,
               ),
@@ -139,8 +131,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'El children es un parametro que tienen algunos widgets en Flutter, '
-                'como Column y Row. Este parametro permite anidar multiples widgets ',
+                'Parámetro que recibe una lista de widgets.',
                 height: 150,
                 width: 750,
               ),
@@ -152,8 +143,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar el children, simplemente debemos pasarle una lista de widgets '
-                'como parametro al widget padre que lo contiene.',
+                'Pasa una lista de widgets: `[widget1, widget2, ...]`.',
                 height: 120,
                 width: 750,
               ),
@@ -168,8 +158,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Los containers son widgets que nos permiten crear cajas '
-                'donde podemos colocar otros widgets y aplicarles estilos.',
+                'Caja que agrupa y estiliza widgets.',
                 height: 120,
                 width: 750,
               ),
@@ -181,8 +170,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar un container, simplemente lo instanciamos y le pasamos '
-                'otros widgets como child o children, ademas de estilos como color ',
+                'Usa child/children y propiedades como color, padding y margin.',
                 height: 150,
                 width: 750,
               ),
@@ -197,8 +185,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Stateless Widget es un tipo de widget en Flutter que no tiene estado. '
-                'Esto significa que su apariencia y comportamiento no cambian durante la ejecucion.',
+                'Widget sin estado; la pagina no cambia una vez creada, solo cambia si se vuelve a cargar.',
                 height: 150,
                 width: 750,
               ),
@@ -210,8 +197,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar un Stateless Widget, simplemente debemos crear una clase que extienda '
-                'de StatelessWidget y sobreescribir el metodo build para definir su apariencia.',
+                'Crea StatelessWidget y define la página dentro del método build.',
                 height: 150,
                 width: 750,
               ),
@@ -226,8 +212,7 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Stateful Widget es un tipo de widget en Flutter que tiene estado. '
-                'Esto significa que su apariencia y comportamiento pueden cambiar durante la ejecucion.',
+                'Widget con estado; puede cambiar su apariencia sin necesidad de cargar denuevo.',
                 height: 150,
                 width: 750,
               ),
@@ -239,8 +224,88 @@ class Page2 extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 20),
               ),
               ContentContainer(
-                'Para usar un Stateful Widget, debemos crear una clase que extienda de StatefulWidget '
-                'y otra clase que extienda de State para definir su estado y apariencia.',
+                'Crea StatefulWidget y desde ese punto puedes empezar a crear la pagina dentro del método build.',
+                height: 150,
+                width: 750,
+              ),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text( "Stateful Widget", style: TextStyle(fontSize: 40, color: Colors.white),),
+              ),),
+              TitleContainer(
+                '¿Que es el Stateful Widget?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Widget con estado; puede cambiar su apariencia sin necesidad de cargar denuevo.',
+                height: 150,
+                width: 750,
+              ),
+
+              TitleContainer(
+                '¿Como usarlo?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Crea StatefulWidget y desde ese punto puedes empezar a crear la pagina dentro del método build.',
+                height: 150,
+                width: 750,
+              ),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text( "ListView", style: TextStyle(fontSize: 40, color: Colors.white),),
+              ),),
+              TitleContainer(
+                '¿Que es el ListView?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Lista desplazable de widgets de forma vertical.',
+                height: 150,
+                width: 750,
+              ),
+
+              TitleContainer(
+                '¿Como usarlo?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Crea StatefulWidget y desde ese punto puedes empezar a crear la pagina dentro del método build.',
+                height: 150,
+                width: 750,
+              ),
+              Center(child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text( "GridView", style: TextStyle(fontSize: 40, color: Colors.white),),
+              ),),
+              TitleContainer(
+                '¿Que es el GridView?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'GridView es un widget que muestra sus hijos en una cuadrícula que escala segun la resolucion.',
+                height: 150,
+                width: 750,
+              ),
+
+              TitleContainer(
+                '¿Como usarlo?',
+                width: 350,
+                height: 50,
+                margin: const EdgeInsets.only(top: 20),
+              ),
+              ContentContainer(
+                'Crea StatefulWidget y desde ese punto puedes empezar a crear la pagina dentro del método build.',
                 height: 150,
                 width: 750,
               ),
