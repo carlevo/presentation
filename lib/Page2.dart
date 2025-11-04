@@ -288,7 +288,7 @@ class Page2 extends StatelessWidget {
               ),),
               TitleContainer(
                 '¿Que es el GridView?',
-                width: 350,
+                width: 375,
                 height: 50,
                 margin: const EdgeInsets.only(top: 20),
               ),
